@@ -21,14 +21,21 @@ a:visited {
     color: #bfc7c9;
 }
 
+strong {
+    color: #bfc7c9;
+}
+
 .header {
     /* background-color: black; */
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     /* padding: 0 1em; */
     width: 100%;
+    background-color: #2a3644;
 }
 
 .header h1 {

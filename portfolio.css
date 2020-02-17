@@ -120,6 +120,11 @@ nav a:visited {
 
 .social img {
     color: white;
+    transition: .1s ease-in-out;
+}
+
+.social img:hover {
+    opacity: 70%;
 }
 
 .galery{
@@ -161,6 +166,7 @@ nav a:visited {
 .galery h3 {
     font-weight: 300;
     transition: color .1s ease-in-out;
+    width: fit-content;
 }
 
 .galery h3:hover{
@@ -175,5 +181,8 @@ nav a:visited {
 } */
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
     /* background-color: black; */
 }

@@ -188,6 +188,7 @@ nav a:visited {
 }
 
 .path {
+    width: 100%;
     margin-top: 5em;
 	position:relative;
 	padding-top:100px;
@@ -221,8 +222,8 @@ nav a:visited {
 	position:absolute;
 	width:5px;
 	height:5px;
-	background:#fff;
-	border:1px solid #21A6AE;
+	background:#bfc7c9;
+	border:1px solid #e95235;
 	left:50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -241,8 +242,8 @@ nav a:visited {
 }
 
 .pulse {
-  background:#21A6AE;
-  box-shadow: 0 0 0 rgba(33,166,174, 0.4);
+  background:#e95235;
+  box-shadow: 0 0 0 #e953354d;
   animation: pulse 2s infinite;
 }
 .pulse:hover {
@@ -251,39 +252,40 @@ nav a:visited {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(33,166,174, 0.4);
+    -webkit-box-shadow: 0 0 0 0 #e9533569;
   }
   70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(33,166,174, 0);
+      -webkit-box-shadow: 0 0 0 10px #e9533500;
   }
   100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(33,166,174, 0);
+      -webkit-box-shadow: 0 0 0 0 #e9533500);
   }
 }
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(33,166,174, 0.4);
-    box-shadow: 0 0 0 0 rgba(33,166,174, 0.4);
+    -moz-box-shadow: 0 0 0 0 #e9533569;
+    box-shadow: 0 0 0 0 #e9533569;
   }
   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(33,166,174, 0);
-      box-shadow: 0 0 0 10px rgba(33,166,174, 0);
+      -moz-box-shadow: 0 0 0 10px #e9533500;
+      box-shadow: 0 0 0 10px #e9533500;
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(33,166,174, 0);
-      box-shadow: 0 0 0 0 rgba(33,166,174, 0);
+      -moz-box-shadow: 0 0 0 0 #e9533500;
+      box-shadow: 0 0 0 0 #e9533500;
   }
 }
 
 .cc-years span {
 	padding-right:30px;
     display: inline-block;
-    color: #94929D;
+    color: #bfc7c9a8;
     font-size: 12px;
 }
 
 
 .company-card {
+    /* font-size: 1.5em; */
 	width:50%;
 	margin-top:-100px;
 }
@@ -344,15 +346,39 @@ nav a:visited {
 	cursor:default;
 }
 
+/* .company-info > h3 {
+    color: #bfc7c9;
+} */
+
 .cc-years {
 	position:absolute;
 	width:100%;
 	margin-left:-100%;
 	text-align:right;
-	margin-top:21px;
+	margin-top:1.3em;
 }
 
 .cc-years span i {
 	font-style:normal;
-	color:#21A6AE;
+	color:#bfc7c9;
+}
+
+
+h3 {
+	font-size:1em;
+	font-weight:700;
+	margin-bottom:5px;
+}
+
+.cc-highlight {
+	font-size:12px;
+	color:#bfc7c9a8;
+	
+}
+
+.cc-desc {
+	margin-top:20px;
+	font-size:12px;
+	line-height:20px;
+	padding-right:10px;
 }

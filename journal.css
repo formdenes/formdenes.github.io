@@ -27,6 +27,7 @@ strong {
 
 .header {
     /* background-color: black; */
+    z-index: 10;
     position: sticky;
     top: 0px;
     display: flex;
@@ -188,18 +189,19 @@ nav a:visited {
 }
 
 .path {
-    width: 100%;
+    width: 1100px;
     margin-top: 5em;
 	position:relative;
 	padding-top:100px;
 }
+
 
 .path-line {
 	position:absolute;
 	margin-top:-10px;
 	left:50%;
 	width:1px;
-	height:1200px;
+	height:1350px;
 	background:#bfc7c9;
 	z-index:1;
 }
@@ -340,10 +342,14 @@ nav a:visited {
 }
 
 .company-info {
-	padding-left:50%;
+    padding-left:50%;
 	position:relative;
 	padding-right:30px;
 	cursor:default;
+}
+
+.company-info > div {
+    font-size: 1.2em;
 }
 
 /* .company-info > h3 {
@@ -381,4 +387,50 @@ h3 {
 	font-size:12px;
 	line-height:20px;
 	padding-right:10px;
+}
+
+@media only screen and (max-width: 1400px)
+{
+	.path {
+		width:960px;
+    }
+    .path-line{
+        height: 1459px;
+    }
+}
+
+@media only screen and (max-width: 1080px)
+{
+    .path {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 680px)
+{
+    .path-line {
+		display: none !important;
+    }
+    
+    .path {
+		padding-top:0;
+	}
+
+	.company-card {
+		width:auto;
+		margin-top:0;
+		margin-bottom:100px;
+	}
+
+	.cc-right, .socials, .first-card .company-info {
+		margin-left:0;
+	}
+
+	.cc-left .cc-in {
+		padding-right:0;
+	}
+
+	.cc-right .cc-in, .fix, .socials {
+		padding-left:0;
+	}
 }

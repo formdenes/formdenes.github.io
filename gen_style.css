@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 5%;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+h1{
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  font-size: 72px;
+}
+
+h2{
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  font-size: 48px;
+}
+
+p2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 32px;
+}
